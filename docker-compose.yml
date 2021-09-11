@@ -1,0 +1,23 @@
+version: "3.5"
+services:
+  abricate:
+    image: gamboa/biopipe:latest
+    volumes:
+      - ./output/abricate:/output
+      - ./fasta:/fasta
+      - ./database:/database
+    entrypoint: /bin/bash -c "source activate abricate; bash"
+  platon:
+    image: gamboa/biopipe:latest
+    volumes:
+      - ./output/platon:/output
+      - ./fasta:/fasta
+      - ./database:/database
+    entrypoint: /bin/bash -c "source activate platon; bash"
+  viralVerify:
+    image: gamboa/biopipe:latest
+    volumes:
+      - ./output/viralVerify:/output
+      - ./fasta:/fasta
+      - ./database:/database
+    entrypoint: /bin/bash -c "source activate viralVerify; bash"
