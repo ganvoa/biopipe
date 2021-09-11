@@ -4,5 +4,7 @@
 /database/abricate/
 /database/platon/
 /database/viralVerify/
-/fasta/
+/fasta/*
+!/fasta/.gitkeep
 !/**/.gitkeep
+!.gitkeep
