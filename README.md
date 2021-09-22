@@ -24,3 +24,11 @@ https://github.com/gem-pasteur/Integron_Finder
 `docker-compose run integron`
 
 `integron_finder --local-max --outdir /output/ --pdf --gbk --func-annot /fasta/<filename>.fsa_nt`
+
+## abricate
+
+https://github.com/tseemann/abricate
+
+`docker-compose run abricate`
+
+`abricate --csv /fasta/<filename>.fsa_nt > /output/<filename>.csv`
