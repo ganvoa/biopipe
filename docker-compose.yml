@@ -21,3 +21,9 @@ services:
       - ./fasta:/fasta
       - ./database:/database
     entrypoint: /bin/bash -c "source activate viralVerify; bash"
+  integron:
+    image: gempasteur/integron_finder:2.0rc10
+    volumes: 
+      - ./output/integron:/output
+      - ./fasta:/fasta
+    entrypoint: /bin/bash
