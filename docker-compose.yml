@@ -27,3 +27,9 @@ services:
       - ./output/integron:/output
       - ./fasta:/fasta
     entrypoint: /bin/bash
+  unicycler:
+    image: gamboa/unicycler:0.5.0
+    volumes: 
+      - ./output/unicycler:/output
+      - ./fasta:/fasta
+    entrypoint: unicycler

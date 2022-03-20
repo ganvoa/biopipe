@@ -56,3 +56,14 @@ https://github.com/tseemann/abricate
 ### batch
 
 `for FILE in /fasta/*; do abricate --csv $FILE > /output/$(basename "$FILE").csv  ; done`
+
+## unicycler
+
+https://github.com/rrwick/Unicycler.git
+
+### Illumina-only assembly:
+
+`docker-compose run --rm  unicycler -1 fasta/<fasta1>.gz -2 fasta/<fasta2>.gz -o output`
+### Hybrid assembly:
+
+`docker-compose run --rm  unicycler -1 fasta/<fasta1>.gz -2 fasta/<fasta2>.gz -l <long_reads.fastq>.gz -o output`
