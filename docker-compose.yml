@@ -33,3 +33,8 @@ services:
       - ./output/unicycler:/output
       - ./fasta:/fasta
     entrypoint: unicycler
+  mobsuite:
+    image: kbessonov/mob_suite:3.0.3
+    volumes: 
+      - ./output/mobsuite:/output
+      - ./fasta:/fasta

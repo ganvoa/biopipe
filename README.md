@@ -67,3 +67,11 @@ https://github.com/rrwick/Unicycler.git
 ### Hybrid assembly:
 
 `docker-compose run --rm  unicycler -1 fasta/<fasta1>.gz -2 fasta/<fasta2>.gz -l <long_reads.fastq>.gz -o output`
+
+## mobsuite
+
+https://github.com/phac-nml/mob-suite
+
+### mob recon:
+
+`docker-compose run --rm mobsuite mob_recon -i fasta/<fasta>.fasta -t -o output`
