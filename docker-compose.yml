@@ -38,3 +38,9 @@ services:
     volumes: 
       - ./output/mobsuite:/output
       - ./fasta:/fasta
+  ariba:
+    image: sangerpathogens/ariba:latest
+    volumes:
+      - ./output/ariba:/output:rw
+      - ./fasta:/fasta
+    entrypoint: ariba

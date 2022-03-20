@@ -74,4 +74,12 @@ https://github.com/phac-nml/mob-suite
 
 ### mob recon:
 
-`docker-compose run --rm mobsuite mob_recon -i fasta/<fasta>.fasta -t -o output`
+`docker-compose run --rm mobsuite mob_recon -i fasta/<fasta>.fasta -t -o output/<folder-name>`
+
+## ariba
+
+https://github.com/sanger-pathogens/ariba
+
+### example:
+
+`docker-compose run --rm ariba test /output/<folder-name>`
